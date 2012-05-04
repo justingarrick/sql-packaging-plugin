@@ -37,4 +37,4 @@ In the Maven project you wish to package as a .sql file, edit the pom.xml file t
 </project>
 ```
 
-When the plugin is executed (by default, in the [package](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html) phase), the plugin looks for a file in ```/target``` (or ```${project.build.directory}```) with a filename in the format ```artifactId-version.sql```.  Using the example pom above, the plugin would expect a file named ```myartifact-1.0.0-SNAPSHOT.sql```.  Whether this file is copied from someplace else, e.g. ```src/main/resources```, or created via the execution of some other plugin is up to you.  
+When the plugin is executed (by default, in the [package](http://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html) phase), the plugin looks for a file in ```/target``` (or ```${project.build.directory}```) with a name of the format ```artifactId-version.sql```.  Using the example pom above, the plugin would expect a file named ```myartifact-1.0.0-SNAPSHOT.sql```.  Whether this file is copied from someplace else, e.g. ```src/main/resources```, or created via the execution of some other plugin is up to you.  

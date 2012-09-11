@@ -29,7 +29,7 @@ In the Maven project you wish to package as a .sql file, edit the pom.xml file t
       <extension>
         <groupId>com.github.justingarrick</groupId>
         <artifactId>sql-packaging-plugin</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
       </extension>
     </extensions>
   </build>

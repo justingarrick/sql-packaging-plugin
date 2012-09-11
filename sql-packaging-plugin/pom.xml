@@ -4,7 +4,7 @@
 
 	<groupId>com.github.justingarrick</groupId>
 	<artifactId>sql-packaging-plugin</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>maven-plugin</packaging>
 	<name>sql-packaging maven plugin</name>
 	<url>https://github.com/justingarrick/sql-packaging-plugin</url>

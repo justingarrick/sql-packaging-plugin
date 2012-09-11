@@ -3,6 +3,10 @@ sql-packaging-plugin
 
 A maven packaging plugin that enables &lt;packaging&gt;sql&lt;/packaging&gt; for .sql artifacts.
 
+Why? Shouldn't .sql files go in SCM?
+=
+Yes, a .sql file would normally be stored in SCM.  However, in some cases, it's nice to treat them as versioned binaries.  For example, when building an installer, instead of doing nested checkouts or some other wizardry, you may want to pull down mypatch-2.0.0.sql as a meven dependency for inclusion in your installer.
+
 Building the Plugin
 =
 Clone this repository and install the plugin to your local Maven repository:

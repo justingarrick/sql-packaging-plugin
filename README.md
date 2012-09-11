@@ -5,7 +5,7 @@ A maven packaging plugin that enables &lt;packaging&gt;sql&lt;/packaging&gt; for
 
 Why? Shouldn't .sql files go in SCM?
 =
-Yes, a .sql file would normally be stored in SCM.  However, in some cases, it's nice to treat them as versioned binaries.  For example, when building an installer, instead of doing nested checkouts or some other wizardry, you may want to pull down mypatch-2.0.0.sql as a meven dependency for inclusion in your installer.
+Yes, a .sql file would normally be stored in SCM.  However, in some cases, it's nice to treat them as versioned binaries.  For example, you might have a build which programattically aggregates a number of smaller .sql files (fix-1.sql, fix-2.sql, fix-3.sql) into a single .sql file (productpatch-2.0.0.sql).  In this case, the aggregate is never edited, but is a build artifact.  As such, it is handy to treat it as a versioned binary so that you can add it as a Maven &lt;dependency&gt;, and, for example, package it into an installer using the maven-assembly-plugin.
 
 Building the Plugin
 =

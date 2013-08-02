@@ -1,7 +1,7 @@
 sql-packaging-plugin
 =
 
-A maven packaging plugin that enables &lt;packaging&gt;sql&lt;/packaging&gt; for .sql artifacts.
+A maven packaging plugin that enables ```<packaging>sql</packaging>``` for .sql artifacts.
 
 Why? Shouldn't .sql files go in SCM?
 =
